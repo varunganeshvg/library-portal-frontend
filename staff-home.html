@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staff Dashboard</title>
+    <link rel="stylesheet" href="staff-home.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-left">
+        <h1>LIBRARY PORTAL</h1>
+        <p>Welcome, <span id="staffName">Staff</span></p>
+    </div>
+
+    <div class="header-right">
+        <button onclick="openProfile()">Profile</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<main class="content">
+    <h2>My Assigned Classes</h2>
+
+    <div id="classGrid" class="class-grid">
+        <!-- Class cards will be injected here -->
+    </div>
+</main>
+
+<script src="staff-home.js"></script>
+</body>
+</html>

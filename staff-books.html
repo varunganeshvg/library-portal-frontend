@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Book</title>
+    <link rel="stylesheet" href="staff-upload.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h1>LIBRARY PORTAL</h1>
+    <button onclick="goHome()">Home</button>
+</header>
+
+<div class="upload-card">
+    <h2>Upload New Book</h2>
+
+    <form id="uploadBookForm">
+        <input type="text" id="title" placeholder="Book Title" required>
+        <input type="text" id="author" placeholder="Author Name" required>
+        <input type="text" id="category" placeholder="Category" required>
+        <input type="text" id="course" placeholder="Course" required>
+        <input type="text" id="section" placeholder="Section" required>
+        <input type="number" id="semester" placeholder="Semester" required>
+        <input type="text" id="downloadLink" placeholder="PDF Download Link" required>
+
+        <button type="submit">Upload Book</button>
+    </form>
+</div>
+
+<script src="staff-upload.js"></script>
+</body>
+</html>

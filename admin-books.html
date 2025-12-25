@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Books</title>
+    <link rel="stylesheet" href="admin-books.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h2>All Uploaded Books</h2>
+    <button onclick="goBack()">Back</button>
+</header>
+
+<div class="container">
+
+    <!-- 🔍 Search -->
+    <input
+        id="searchInput"
+        placeholder="Search by title, author, or category"
+        oninput="searchBooks()"
+        class="search-box"
+    >
+
+    <!-- 📚 Books Table -->
+    <table id="booksTable">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Course</th>
+                <th>Section</th>
+                <th>Semester</th>
+                <th>Uploaded At</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="booksBody">
+            <!-- rows injected by JS -->
+        </tbody>
+    </table>
+
+</div>
+
+<script src="admin-books.js"></script>
+</body>
+</html>

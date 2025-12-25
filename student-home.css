@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f7ff; /* light blue background */
+    color: #0a2a66;
+}
+
+/* ===== HEADER STYLING ===== */
+.main-header {
+    display: flex;                 /* puts left & right side in one row */
+    justify-content: space-between;/* left on one side, right on other */
+    align-items: center;           /* vertically center items */
+    
+    background-color: #0d47a1;     /* dark blue */
+    color: white;                  /* white text */
+    
+    padding: 30px 30px;            /* space inside header */
+}
+
+/* Left side content */
+.header-left {
+    display: flex;
+    flex-direction: column;        /* title & text stacked */
+}
+
+/* Portal title */
+.portal-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Welcome text */
+.welcome-text {
+    margin: 4px 0 0 0;
+    font-size: 14px;
+}
+
+/* Student name (inside welcome text) */
+#welcome-text span,
+#studentName {
+    font-weight: bold;
+}
+
+/* Right side profile button */
+.profile-btn {
+    background-color: white;
+    color: #0d47a1;
+    
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.profile-btn:hover {
+    background-color: #e3f2fd;     /* light blue */
+}
+
+section {
+    padding: 20px;
+}
+
+section input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #0a5ed7;
+    border-radius: 5px;
+}
+
+section button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #0a5ed7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section button:hover {
+    background-color: #084bb5;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+
+thead {
+    background-color: #dbe9ff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+/* ===== SCROLLABLE TABLE BODY ===== */
+tbody {
+    display: block;
+    max-height: 300px; /* scroll height */
+    overflow-y: auto;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* ===== DOWNLOAD LINK ===== */
+a {
+    color: #0a5ed7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #e6efff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.logout-btn {
+    margin-left: 10px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+
+
+
+
+

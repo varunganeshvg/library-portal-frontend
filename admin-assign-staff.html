@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assign Staff</title>
+    <link rel="stylesheet" href="admin-assign-staff.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h2>Assign Staff to Class</h2>
+    <button onclick="goBack()">Back</button>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h3>Create Assignment</h3>
+
+        <select id="staffSelect"></select>
+        <input id="course" placeholder="Course">
+        <input id="section" placeholder="Section">
+        <input id="semester" type="number" placeholder="Semester">
+        <input id="subject" placeholder="Subject Name">
+
+        <button onclick="assignStaff()">Assign</button>
+    </div>
+
+    <div class="card">
+        <h3>All Assignments</h3>
+        <table id="assignmentTable">
+            <tr>
+                <th>Staff</th>
+                <th>Course</th>
+                <th>Section</th>
+                <th>Semester</th>
+                <th>Subject</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<script src="admin-assign-staff.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+:root {
+    --primary-blue: #0066cc;    /* Main blue color */
+    --dark-blue: #004c99;       /* Darker shade for hover */
+    --light-grey: #f0f4f8;      /* Background color */
+    --text-color: #222;         /* Main text color */
+}
+
+/* ---------- Entire Page Layout ---------- */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--light-grey);   /* light background */
+    color: var(--text-color);              /* text color */
+    display: flex;                         /* use flexbox layout */
+    justify-content: center;               /* center horizontally */
+    align-items: center;                   /* center vertically */
+    height: 100vh;                         /* full screen height */
+    margin: 0;                             /* remove default browser spacing */
+}
+
+/* ---------- The White Login Card ---------- */
+.login-box {
+    background-color: #ffffff;                       /* white box */
+    padding: 35px 45px;                              /* inner spacing */
+    border-radius: 12px;                             /* smooth corners */
+    box-shadow: 0 4px 20px rgba(0, 102, 204, 0.15);  /* soft blue shadow */
+    text-align: center;                              /* center text */
+    width: 350px;                                    /* fixed width */
+    border-top: 5px solid var(--primary-blue);       /* top blue border */
+}
+
+/* ---------- Titles ---------- */
+h1 {
+    color: var(--primary-blue);       /* bright blue */
+    margin-bottom: 10px;              /* small gap below */
+    letter-spacing: 1px;              /* spaced letters */
+}
+
+h2 {
+    color: var(--dark-blue);          /* darker blue for subtitle */
+    margin-top: 10px;
+}
+
+/* ---------- Paragraphs ---------- */
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* ---------- Input Fields ---------- */
+input {
+    width: 100%;                              /* full width of box */
+    padding: 10px;                            /* inner space */
+    margin: 8px 0;                            /* gap between inputs */
+    border: 1px solid #ccd6e0;                /* light border */
+    border-radius: 6px;                       /* round corners */
+    background-color: #ffffff;                /* white background */
+    font-size: 14px;
+    transition: 0.3s;                         /* smooth effect */
+}
+
+/* When you click inside input */
+input:focus {
+    border-color: var(--primary-blue);        /* blue border when active */
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.4); /* soft glow */
+    outline: none;                            /* remove default border */
+}
+
+/* ---------- Buttons ---------- */
+button {
+    width: 100%;                              /* full width button */
+    padding: 10px;
+    background-color: var(--primary-blue);    /* main blue */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+/* Hover animation */
+button:hover {
+    background-color: var(--dark-blue);       /* darker blue on hover */
+    transform: scale(1.02);                   /* gentle zoom effect */
+}
+
+/* ---------- Links ---------- */
+a {
+    color: var(--primary-blue);               /* blue links */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--dark-blue);
+}

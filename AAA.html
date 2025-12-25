@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile Setup</title>
+    <link rel="stylesheet" href="student-profile-setup.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h2>Complete Your Profile</h2>
+</header>
+
+<div class="profile-card">
+
+    <input id="name" placeholder="Name" readonly>
+    <input id="email" placeholder="Email" readonly>
+
+    <!-- Dropdown from backend -->
+    <select id="classSelect">
+        <option value="">Select Class</option>
+    </select>
+
+    <input id="rollNo" placeholder="Roll Number">
+
+    <button onclick="saveProfile()">Save Profile</button>
+
+</div>
+
+<script src="student-profile-setup.js"></script>
+</body>
+</html>
+
+
+
+    

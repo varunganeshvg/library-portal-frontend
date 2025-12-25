@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f7ff;
+}
+
+.main-header {
+    background-color: #0d47a1;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header button {
+    background: white;
+    color: #0d47a1;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-card {
+    background: white;
+    width: 400px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.upload-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.upload-card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.upload-card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0d47a1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ===== Uploaded Books Table ===== */
+
+.upload-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #0d47a1;
+}
+
+#booksTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#booksTable th,
+#booksTable td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+#booksTable th {
+    background-color: #f0f4ff;
+    color: #0d47a1;
+}
+
+#booksTable tr:hover {
+    background-color: #f9fbff;
+}
+
+/* ===== Action Buttons ===== */
+
+#booksTable button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 6px;
+    font-size: 13px;
+}
+
+#booksTable button:first-child {
+    background-color: #1976d2; /* Edit */
+    color: white;
+}
+
+#booksTable button:last-child {
+    background-color: #e53935; /* Delete */
+    color: white;
+}
+
+#booksTable button:hover {
+    opacity: 0.9;
+}

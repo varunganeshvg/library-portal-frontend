@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Uploaded Books</title>
+    <link rel="stylesheet" href="staff-update-books.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h1>LIBRARY PORTAL</h1>
+    <button onclick="goHome()">Home</button>
+</header>
+
+<section class="content">
+    <h2>My Uploaded Books</h2>
+    <!-- ===== SEARCH BAR (UI ONLY) ===== -->
+<div class="search-box">
+    <input 
+        type="text" 
+        placeholder="Search by title, author or category"
+    >
+    <button>Search</button>
+</div>
+
+    <table id="booksTable">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Download</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="booksBody">
+            <!-- JS will insert rows here -->
+        </tbody>
+    </table>
+</section>
+
+<script src="staff-update-books.js"></script>
+</body>
+</html>

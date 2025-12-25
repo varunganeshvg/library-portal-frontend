@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Portal - Student Home</title>
+    <link rel="stylesheet" href="student-home.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-left">
+        <h1 class="portal-title">LIBRARY PORTAL</h1>
+        <p class="welcome-text">Hello, <span id="studentName">Student</span></p>
+    </div>
+
+    <div class="header-right">
+        <button type="button" class="profile-btn" onclick="openProfile()">Profile</button>
+        <button type="button" class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<!-- ================= SUBJECTS ================= -->
+<section id="subjectsSection">
+    <h2>Your Subjects</h2>
+    <div id="subjectsContainer"></div>
+</section>
+
+<!-- ================= BOOKS ================= -->
+<section id="booksSection" style="display:none;">
+    <h2>Books</h2>
+
+    <button onclick="goBackToSubjects()">⬅ Back</button>
+
+    <br><br>
+
+    <!-- SEARCH (ONLY HERE ✅) -->
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search books by title, author or category"
+        oninput="searchBooks()"
+    >
+
+    <table border="1" width="100%" cellpadding="8">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Uploaded At</th>
+                <th>Download</th>
+            </tr>
+        </thead>
+        <tbody id="booksBody"></tbody>
+    </table>
+</section>
+
+<footer>
+    <hr>
+    <p><strong>About Us</strong></p>
+    <p>Library Portal helps students access study materials uploaded by staff.</p>
+</footer>
+
+<script src="student-home.js"></script>
+</body>
+</html>
