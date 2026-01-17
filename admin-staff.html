@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Staff</title>
+    <link rel="stylesheet" href="admin-staff.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h2>Manage Staff</h2>
+    <button onclick="goBack()">Back</button>
+</header>
+
+<main class="container">
+
+    <!-- Add Staff -->
+    <div class="card">
+        <h3>Add New Staff</h3>
+
+        <input id="name" placeholder="Staff Name">
+        <input id="email" placeholder="Email">
+        <input id="department" placeholder="Department">
+        <input id="staffCode" placeholder="Staff Code">
+
+        <button onclick="addStaff()">Add Staff</button>
+    </div>
+
+    <!-- Staff List -->
+    <div class="card">
+        <h3>All Staff</h3>
+        <table id="staffTable">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Code</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+    </div>
+
+</main>
+
+<script src="admin-staff.js"></script>
+</body>
+</html>

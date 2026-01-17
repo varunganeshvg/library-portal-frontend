@@ -1,0 +1,37 @@
+ADMIN
+
+email = start@library.com
+pass = admin@123
+
+
+STAFF
+
+1
+
+email = bruce@library.com
+password = staff@123
+
+2
+
+email = natasha@library.com
+password = staff@123
+
+
+STUDENT
+
+1
+
+email = peter@test.com
+pass = peter123
+
+2
+email = steve@test.com
+pass = steve123
+
+
+{
+    "role": "ROLE_STUDENT",
+    "name": "peter",
+    "id": 52,
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVFVERU5UIiwidXNlcklkIjo1Miwic3ViIjoicGV0ZXJAdGVzdC5jb20iLCJpYXQiOjE3NjY0OTc0NTMsImV4cCI6MTc2NjUwMTA1M30.7MFtR_MznAqPurjiCBr2mmu4fBq4Jki8Tx1E6uOwye4"
+}

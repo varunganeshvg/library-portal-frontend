@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-home.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div>
+        <h1>LIBRARY PORTAL</h1>
+        <p id="dashboardTitle">Dashboard</p>
+    </div>
+
+    <div class="header-actions">
+        <button onclick="openProfile()">Profile</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+</header>
+
+
+<main class="admin-dashboard">
+
+    <div class="card" onclick="goStaff()">
+        <h3>Manage Staff</h3>
+        <p>Add, edit or remove staff</p>
+    </div>
+
+    <div class="card" onclick="goStudents()">
+        <h3>Manage Students</h3>
+        <p>View and update student details</p>
+    </div>
+
+    <div class="card" onclick="goAssign()">
+        <h3>Assign Staff to Class</h3>
+        <p>Course, section, semester, subject</p>
+    </div>
+
+    <div class="card" onclick="goBooks()">
+        <h3>View All Books</h3>
+        <p>Read-only access</p>
+    </div>
+
+</main>
+
+<script src="admin-home.js"></script>
+</body>
+</html>

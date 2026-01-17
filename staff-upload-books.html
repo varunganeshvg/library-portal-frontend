@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manage Books</title>
+  <link rel="stylesheet" href="staff-upload.css">
+</head>
+<body>
+
+<header class="main-header">
+  <h2 id="pageTitle">Manage Books</h2>
+  <button onclick="goBack()">Back</button>
+</header>
+
+<div class="upload-card">
+
+  <!-- Class Info -->
+  <input id="classInfo" readonly>
+
+  <h3>Upload Book</h3>
+
+  <input id="title" placeholder="Book Title">
+  <input id="author" placeholder="Author">
+  <input id="category" placeholder="Category">
+  <input id="downloadLink" placeholder="PDF Download Link">
+
+  <button onclick="uploadBook()">Upload Book</button>
+
+  <hr style="margin:20px 0;">
+
+  <h3>Uploaded Books</h3>
+
+  <table id="booksTable">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Category</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="booksBody">
+      <!-- rows injected by JS -->
+    </tbody>
+  </table>
+
+</div>
+
+<script src="staff-upload.js"></script>
+</body>
+</html>
