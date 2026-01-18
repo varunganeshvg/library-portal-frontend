@@ -144,7 +144,7 @@ async function deleteBook(id) {
     const token = localStorage.getItem("authToken");
 
     await fetch(
-        `https://library-portal-bookservice-production.up.railway.app/api/books/delete/${id}`
+        `https://library-portal-bookservice-production.up.railway.app/api/books/delete/${id}`,
 
         {
             method: "DELETE",
